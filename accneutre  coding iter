@@ -1,3 +1,6 @@
+# this is not the optimal solution as its time complexity is O(n^3);
+# Lets try to solve with a optimal way possible ;
+
 import java.util.*;
 class accenture
 {
@@ -31,4 +34,5 @@ class accenture
 }
 
 
-output 1,2,6
+output:
+1,2,6
