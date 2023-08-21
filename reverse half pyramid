@@ -1,0 +1,44 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void pattern(int n )
+    {
+        for(int i =1 ;i<n;i++)
+        {
+            for(int j =n-i ;j>=1;j--)
+            {
+                System.out.print("_");     #Faced few problems in this sentence Describe below in brief 
+            }
+            for(int j= i;j>=1;j--)
+            {
+                System.out.print("*");
+                
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        int i =5;
+        pattern(i);
+        
+    }
+}
+
+
+when add '_'
+output 
+_____*
+____**
+___***
+__****
+_*****
+******
+but without _
+output
+*
+____**
+___***
+__****
+_*****
+******
