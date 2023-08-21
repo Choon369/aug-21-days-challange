@@ -1,0 +1,34 @@
+import java.util.*;
+class accenture
+{
+    public static void trippy(int[] a, int input)
+    {
+        int n = a.length;
+        for(int i = 0;i<n-2;i++)
+        {
+            for(int j= i+1;j<n-1;j++)
+            {
+                for(int k = i+2;k<n;k++)
+                {
+                    int sum = a[i]+a[k]+a[j];
+                    if(Math.pow(sum,2)==input)
+                    {
+                        System.out.println(a[i]+","+a[j]+","+a[k]);
+                        return ;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    public static void main(String[] args)
+    {
+        int[] a= {1,2,3,6,7,4};
+        int input = 81;
+        trippy(a,input);
+    }
+}
+
+
+output 1,2,6
